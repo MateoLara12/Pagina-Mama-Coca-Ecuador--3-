@@ -1,0 +1,52 @@
+/*estilos del contador*/
+.contador-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    font-size: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contador-menos,.contador-mas{
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contador-menos{
+    background-color: black;
+    color: white;
+}
+
+.contador-mas{
+    background-color: black;
+    color: white;
+}
+
+.contador-menos:hover{
+    background-color: #a6cc82;
+    transform: scale(1.1);
+}
+
+.contador-mas:hover{
+    background-color: #a6cc82;
+    transform: scale(1.1);
+}
+
+.mostrar{
+    background-color: white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}

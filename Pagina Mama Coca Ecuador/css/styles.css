@@ -1,0 +1,14 @@
+/*Estos son estilos importados para unificar todos los css */
+
+@import "Colors.css";
+@import "common.css";
+@import "grid.css";
+@import "header.css";
+@import "sidebar.css";
+@import "footer.css";
+@import "photos.css";
+@import "tablaProductos.css";
+@import "contador.css";
+@import "Resenias.css";
+@import "Mapa.css";
+@import "puntos-venta.css";

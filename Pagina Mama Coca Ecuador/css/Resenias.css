@@ -1,0 +1,118 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.comentario-caja, .listacomentarios{
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #0002;
+}
+
+.sesiónResenias{
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.listacomentarios{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.listacomentarios .usuario{
+    display: flex;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.listacomentarios .usuario img{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.listacomentarios .nombre{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.listacomentarios .dia{
+    font-size: 12px;
+}
+
+.reply{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    color: #777;
+    gap: 5px;
+}
+
+.icon:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.comentarioPosteado .comentario{
+    padding: 0 0 15px 58px;
+}
+
+.comentario-caja{
+    padding: 10px;
+    overflow: hidden;
+}
+
+.comentario-caja .usuario{
+    display: flex;
+    width: min-content;
+}
+
+.comentario-caja .imagen img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.comentario-caja textarea{
+    background: #eee;
+    width: -webkit-fill-available;
+    height: 152px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0.5px #0003;
+}
+
+.comentario-caja textarea:focus{
+    outline-color: #009cff;
+}
+
+.comentario-caja .comentario-entrega{
+    float: right;
+    padding: 6px 14px;
+    border: none;
+    background: #009cff;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+
+
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina oficial Mama Coca Ecuador</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="icon" type="image/png" href="img/favicom.JPEG" />
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <h1> Mama Coca Ecuador</h1>
+            <ul>
+                <li><a href="index.html">Información</a></li>
+                <li><a href="#" class="active" >Comprar</a></li>
+                <li><a href="Resenias.html">Reseñas</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <main>
+        <h2>Nuestros Productos</h2>
+
+        <!--Creación de tabla-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Comprar</th>
+                </tr>
+            </thead>
+
+
+            <!--Contenido de cada tabla-->
+            <tbody>
+                <tr>
+                    <td><img src="img/producto1.png" alt="Imagen del producto" width="300"></td>
+                    <td>Producto 1<br><br>Descripción del producto</td>
+                    <td>0$</td>
+                    <td>
+                        <div class="contador-body">
+                            <button class="contador-menos">-</button>
+                            <div class="mostrar">0</div>
+                            <button class="contador-mas">+</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="carrito-compras">
+                            <button class="btn-carrito">Comprar</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/producto2.jpg" alt="Imagen del producto" width="300"></td>
+                    <td>Producto 2<br><br>Descripción del producto</td>
+                    <td>0$</td>
+                    <td>
+                        <div class="contador-body">
+                            <button class="contador-menos">-</button>
+                            <div class="mostrar">0</div>
+                            <button class="contador-mas">+</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="carrito-compras">
+                            <button class="btn-carrito">Comprar</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/producto3.jpg" alt="Imagen del producto" width="300"></td>
+                    <td>Producto 3<br><br>Descripción del producto</td>
+                    <td>0$</td>
+                    <td>
+                        <div class="contador-body">
+                            <button class="contador-menos">-</button>
+                            <div class="mostrar">0</div>
+                            <button class="contador-mas">+</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="carrito-compras">
+                            <button class="btn-carrito">Comprar</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+
+            <!--Contador de productos seleccionados-->
+            <!--Función de conteo 2-->
+            <script>
+                const todosLosContadores = document.querySelectorAll(".contador-body");
+                todosLosContadores.forEach(contenedor => {
+                    const mostrar = contenedor.querySelector(".mostrar");
+                    const buttonMas = contenedor.querySelector(".contador-mas");
+                    const buttonMenos = contenedor.querySelector(".contador-menos");
+
+                    buttonMas.onclick=function() {
+                        let numero = parseInt(mostrar.innerText,10);
+                        mostrar.innerText = numero + 1;
+                    };
+
+                    buttonMenos.onclick=function() {
+                        let numero=parseInt(mostrar.innerText,10);
+                        if (numero > 0) {
+                        mostrar.innerText = numero - 1;
+                        }
+                    };
+                });
+
+            </script>
+        </table>
+    </main>
+
+    <!--Pie de pagina-->
+    <footer>&copy; MamaCocaEcuador S.A</footer>
+
+</body>

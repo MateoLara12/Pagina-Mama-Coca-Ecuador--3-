@@ -1,0 +1,58 @@
+#puntos-venta {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    margin-left: 240px; /* si tu sidebar es fijo */
+    min-height: 100vh;
+}
+
+#puntos-venta h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 3px solid #8BC34A;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.puntos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.punto-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.punto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.punto-card h3 {
+    margin-top: 0;
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+.punto-card p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    #puntos-venta {
+        margin-left: 0;
+        padding: 40px 20px;
+    }
+
+    .puntos-grid {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+/* TU FOOTER - NO SE TOCA */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding: 5px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* CONTENEDOR INTERNO */
+.footer-content {
+    position: relative;
+}
+
+/* ICONO SOCIAL */
+.footer-social {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+
+/* SVG */
+.footer-social svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* HOVER */
+.footer-social:hover {
+    transform: scale(1.5);
+    transition: transform 0.05s ease;
+}
